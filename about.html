@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CineMovie</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="main.css" type="text/css"/>
+    <link rel="stylesheet" href="show_movies.css" type="text/css"/>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script src="https://use.fontawesome.com/6d25878e5b.js"></script>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false"></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <a href="cinemovie.html" id="logo-icon"></a>
+      <h1 class="logoname">Cine...Movie</h1>
+      <nav>
+        <a id="menu-icon"></a>
+        <ul>
+          <li><a href="cinemovie.html">Home</a></li>
+          <li><a class="movies-dropdown">Movies</a>
+            <ul class="dropdown-menu">
+              <li><a href="now_showing.html">Now Showing</a></li>
+              <li><a href="coming_soon.html">Coming soon</a></li>
+            </ul>
+          </li>
+          <li><a href="#" class="current">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- HIDE-MENU -->
+    <div class="menu">
+      <div class="icon-close">
+        <p style="display: inline;font-size: 28px;;">Close</p>
+        <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+      </div>
+
+      <ul>
+        <li><a href="cinemovie.html">Home</a></li>
+        <li><a class="hide-movies-dropdown">Movies</a></li>
+        <ul class="hide-dropdown-menu">
+          <li><a href="now_showing.html">Now Showing</a></li>
+          <li><a href="coming_soon.html">Coming soon</a></li>
+        </ul>
+        <li><a href="#">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </div>
+    
+    <section class="about">
+        <div class="about-section-left">
+          <h2 style="padding:2% 6% ;color:#213e7b;">About Us</h2>
+          <p style="padding: 6%;font-size: 95%;">Habens semper restat cur lor primas est videbo. Cau novi dare meae cum mei voce sex. Mox cur pendeo hic operae fronte. Colligere nullamque ima eam membrorum levitatem conservat dum explorant. Existeret habituros societati evidenter suo magnitudo duo.</p>
+        </div>
+        <div class="about-section-right">
+          <h2 style="padding:2%;color:#213e7b;">Contact</h2>
+          <p style="padding-top: 25px;padding-left: 15px;">To contact us please fill the form below</p>
+          <form style="padding-left: 15px;">
+            <label for="first_name">First Name:<span style="color:#9c0c0c;">*</span></label>
+            <input type="text" id="firstname" name="firstname" placeholder="John">
+            <label for="last_name">Last Name:<span style="color:#9c0c0c;">*</span></label>
+            <input type="text" id="lastname" name="lastname" placeholder="Smith">
+            <label for="email">E-mail: <span style="color:#9c0c0c;">*</span></label>
+            <input type="email" id="email" name="email" placeholder="john.smith@gmail.com">
+            <label for="content" style="margin-top: 30px;">Type your comment here:<span style="color:#9c0c0c;">*</span></label>
+            <textarea rows="10" cols="50" id="content" name="content" style="width:94%"></textarea>
+            <br/>
+            <button class="btn">Submit</button>
+          </form> 
+          <p style="margin-bottom: 40px;"></p>
+         </div>
+         <div class="clear"></div>
+         <div>
+           <h2 style="padding:2%;color:#213e7b;">Location</h2>
+           <div id="map" style="width:100%;height:300px"></div>
+    </section>
+    
+    <!-- FOOTER -->
+    <footer>
+      <section class="section-on-three">
+        <h3><b>Cinema Theater</b></h3>
+        <p><b>210-888-8888</b><br><br>
+        The Mall Athens,Andrea Papandreou 35 <br>
+        Athens,Marousi 15122 <br>
+        cinema@cinemovie.com</p>
+      </section>
+      <section class="section-on-three">
+        <h3><b>Meet Us On:</b></h3>
+        <ul class="social-media">
+          <li><a href="https://www.facebook.com" target="_blank" style="padding-right: 15px;padding-left: 15px;"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.plus.google.com" target="_blank" ><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.twitter.com" target="_blank" style="padding-left:9px;padding-right:9px;"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.youtube.com" target="_blank" style="padding-left: 10px;padding-right: 10px;"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+        </ul>
+      </section>
+      <section class="section-on-three">
+        <img src="http://www.blogmalaga.es/wp-content/uploads/2015/11/rollo-pelicula-3.png" style="height:150px;width:60%;margin-top:30px;"/>
+      </section>
+    </footer>
+    
+    <footer class="second-footer">
+      <p>&copy;Copyright - CineMovie,2016</p>
+    </footer>
+
+
+    <script type="text/javascript">
+      function myMap() {
+        var mapCanvas = document.getElementById("map");
+        var mapOptions = {
+          center: new google.maps.LatLng(38.044472, 23.790444), 
+          zoom: 15
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+        var marker = new google.maps.Marker({position:new google.maps.LatLng(38.044472, 23.790444),map:map});
+
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+  </body>
+</html>

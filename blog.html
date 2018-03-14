@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CineMovie</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="main.css" type="text/css"/>
+    <link rel="stylesheet" href="show_movies.css" type="text/css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script src="https://use.fontawesome.com/6d25878e5b.js"></script>
+    <style>
+      @media screen and (max-width: 800px){
+        .menu {
+          margin-top: -117px;
+        }
+      }
+      @media screen and (max-width: 279px){
+        .menu {
+          top: 223px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <a href="cinemovie.html" id="logo-icon"></a>
+      <h1 class="logoname">Cine...Movie</h1>
+      <nav>
+        <a id="menu-icon"></a>
+        <ul>
+          <li><a href="cinemovie.html" >Home</a></li>
+          <li><a class="movies-dropdown">Movies</a>
+            <ul class="dropdown-menu">
+              <li><a href="now_showing.html">Now Showing</a></li>
+              <li><a href="coming_soon.html">Coming soon</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#" class="current">Blog</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- HIDE-MENU -->
+    <div class="menu">
+      <div class="icon-close">
+        <p style="display: inline;font-size: 28px;;">Close</p>
+        <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+      </div>
+
+      <ul>
+        <li><a href="cinemovie.html">Home</a></li>
+        <li><a class="hide-movies-dropdown">Movies</a></li>
+        <ul class="hide-dropdown-menu">
+          <li><a href="now_showing.html">Now Showing</a></li>
+          <li><a href="coming_soon.html">Coming soon</a></li>
+        </ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </div>
+    
+    <!-- SECTION -->
+   
+    <section class="section">
+      
+    </section>
+    
+    <!-- FOOTER -->
+    <footer>
+      <section class="section-on-three">
+        <h3><b>Cinema Theater</b></h3>
+        <p><b>210-888-8888</b><br><br>
+        The Mall Athens,Andrea Papandreou 35 <br>
+        Athens,Marousi 15122 <br>
+        cinema@cinemovie.com</p>
+      </section>
+      <section class="section-on-three">
+        <h3><b>Meet Us On:</b></h3>
+        <ul class="social-media">
+          <li><a href="https://www.facebook.com" target="_blank" style="padding-right: 15px;padding-left: 15px;"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.plus.google.com" target="_blank" ><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.twitter.com" target="_blank" style="padding-left:9px;padding-right:9px;"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.youtube.com" target="_blank" style="padding-left: 10px;padding-right: 10px;"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+        </ul>
+      </section>
+      <section class="section-on-three">
+        <img src="http://www.blogmalaga.es/wp-content/uploads/2015/11/rollo-pelicula-3.png" style="height:150px;width:60%;margin-top:30px;"/>
+      </section>
+    </footer>
+    
+    <footer class="second-footer">
+      <p>&copy;Copyright - CineMovie,2016</p>
+    </footer>
+  </body>
+</html>

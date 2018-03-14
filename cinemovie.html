@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CineMovie</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="main.css" type="text/css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script src="https://use.fontawesome.com/6d25878e5b.js"></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <a href="#" id="logo-icon"></a>
+      <h1 class="logoname">Cine...Movie</h1>
+      <nav>
+        <a id="menu-icon"></a>
+        <ul>
+          <li><a href="#" class="current">Home</a></li>
+          <li><a class="movies-dropdown">Movies</a>
+            <ul class="dropdown-menu">
+              <li><a href="now_showing.html">Now Showing</a></li>
+              <li><a href="coming_soon.html">Coming soon</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- HIDE-MENU -->
+    <div class="menu">
+      <div class="icon-close">
+        <p style="display: inline;font-size: 28px;;">Close</p>
+        <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+      </div>
+
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a class="hide-movies-dropdown">Movies</a></li>
+        <ul class="hide-dropdown-menu">
+          <li><a href="now_showing.html">Now Showing</a></li>
+          <li><a href="coming_soon.html">Coming soon</a></li>
+        </ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </div>
+    
+    <!-- SLIDE -->
+    <div class="slide-show">
+      <div class="slide active-slide">
+        <img src="images/cinema.png"/>
+      </div>
+      <div class="slide">
+        <img src="images/lobby.png"/>
+      </div> 
+      <div class="slide">
+        <img src="images/3d.png"/>
+      </div> 
+      <div class="slide">
+        <img src="images/store.png"/>
+      </div> 
+    </div>
+    <div class="slider-nav">
+      <a class="arrow-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+      <ul class="slider-dots">
+        <li class="dot active-dot">&bull;</li>
+        <li class="dot">&bull;</li>
+        <li class="dot">&bull;</li>
+        <li class="dot">&bull;</li>
+      </ul>
+      <a class="arrow-next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+    </div> 
+
+    <!-- SECTIONS -->
+    <section class="section-on-two">
+      <div class="background">
+        <h3 id="text">On screen today</h3>
+        <div class="movie">
+          <div class="movie-image">
+            <img src="https://s-media-cache-ak0.pinimg.com/236x/7c/49/91/7c4991d48c76a7dd0a1bf17f12d2630b.jpg">
+          </div>
+          <div class="description-movie">
+            <p>Earth's mightiest heroes must come together and learn to fight as a team if they are to stop the mischievous Loki and his alien army from enslaving humanity.</p>
+            <a href="avengers.html">Read More & Ticket Info</a>
+          </div>
+        </div>
+        <div class="movie">
+          <div class="movie-image">
+            <img src="https://s-media-cache-ak0.pinimg.com/236x/7c/49/91/7c4991d48c76a7dd0a1bf17f12d2630b.jpg">
+          </div>
+          <div class="description-movie">
+            <p>Earth's mightiest heroes must come together and learn to fight as a team if they are to stop the mischievous Loki and his alien army from enslaving humanity.</p>
+            <a href="avengers.html">Read More & Ticket Info</a>
+          </div>
+        </div>
+        <a href="now_showing.html" style="border-top: 2px solid #4e0688;">See all</a>
+      </div>
+    </section>
+    <section class="section-on-two">
+      <div class="background">
+        <div class="right-up">
+          <div class="right-right" style="width:50%;margin-top: 15px;">
+            <p id="welcome">Welcome</p>
+            <p style="margin-left:5px">to our movie theater</p>
+            <img src="http://www.homenetvideo.com/demo/Video/MISC/filmreel.gif" style="height:100px;width:100px;"></img>
+          </div>
+          <div class="left-side" style="width:110%;margin-left:20px;">
+            <p style="margin-top:50px;">Tritam necdum cum maxime usu operis unquam lapide. Via dem persuadere lor affirmabam ita quapropter incidissem. Du ei de animum et author ausint volens numeri.</p>
+          </div>
+        </div>
+        <div class="right-bottom">
+          <h3 id="text">Coming soon</h3>
+          <div class="coming-movies">
+            <a href="avengers.html"><img src="https://s-media-cache-ak0.pinimg.com/236x/7c/49/91/7c4991d48c76a7dd0a1bf17f12d2630b.jpg"></a>
+            <a href="avengers.html"><img src="https://s-media-cache-ak0.pinimg.com/236x/7c/49/91/7c4991d48c76a7dd0a1bf17f12d2630b.jpg"></a>
+            <a href="avengers.html"><img src="https://s-media-cache-ak0.pinimg.com/236x/7c/49/91/7c4991d48c76a7dd0a1bf17f12d2630b.jpg"></a>
+            <a href="avengers.html"><img src="https://s-media-cache-ak0.pinimg.com/236x/7c/49/91/7c4991d48c76a7dd0a1bf17f12d2630b.jpg"></a>
+          </div>
+        </div>
+          <a href="coming_soon.html" style="border-top: 2px solid #4e0688;">See all</a>
+      </div>
+    </section>
+    
+    <div class="clear" style="margin-bottom:10px;"></div>
+    
+    <section class="section-on-three">
+      <a href="subscribe.html"><i class="fa fa-envelope image-i" aria-hidden="true" style="font-size: 4rem;"></i></a>
+      <h1>Subscribe To Our Newsletter!</h1>
+      <p>Join our newsletter and learn everything about new movies and for about our cinema!</p>
+    </section>
+    <section class="section-on-three">
+      <a href="about.html#map"><i class="fa fa-map-marker image-i" aria-hidden="true" style="font-size: 4rem;padding-left: 30px;padding-right: 30px;"></i></a>
+      <h1>Find Us On Map.</h1>
+      <p>Our location sits into one of the well-known mall in Athens. You can combine your shopping and lunch with a good movie!</p>
+    </section>
+    <section class="section-on-three">
+      <a href=""><i class="fa fa-bell image-i" aria-hidden="true" style="font-size: 4rem;"></i></a>
+      <h1>Deals!</h1>
+      <p>Learn about our deals and who can get discount to our cinema!</p>
+    </section>
+    
+    <!-- FOOTER -->
+    <footer>
+      <section class="section-on-three">
+        <h3><b>Cinema Theater</b></h3>
+        <p><b>210-888-8888</b><br><br>
+        The Mall Athens,Andrea Papandreou 35 <br>
+        Athens,Marousi 15122 <br>
+        cinema@cinemovie.com</p>
+      </section>
+      <section class="section-on-three">
+        <h3><b>Meet Us On:</b></h3>
+        <ul class="social-media">
+          <li><a href="https://www.facebook.com" target="_blank" style="padding-right: 15px;padding-left: 15px;"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.plus.google.com" target="_blank" ><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.twitter.com" target="_blank" style="padding-left:9px;padding-right:9px;"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.youtube.com" target="_blank" style="padding-left: 10px;padding-right: 10px;"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+        </ul>
+      </section>
+      <section class="section-on-three">
+        <img src="http://www.blogmalaga.es/wp-content/uploads/2015/11/rollo-pelicula-3.png" style="height:150px;width:60%;margin-top:30px;"/>
+      </section>
+    </footer>
+    
+    <footer class="second-footer">
+      <p>&copy;Copyright - CineMovie,2016</p>
+    </footer>
+  </body>
+</html>
